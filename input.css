@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .logo-font{
+        font-family: 'Roboto', sans-serif;
+    }
+    .photo-size{
+        height: 150px;
+        width: 150px;
+        
+    }
+    .name-font{
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .icon-color{
+        color: #89C4E1;
+        @apply dark:text-blue-800;
+
+    }
+
+    .greeting{
+        font-size:1.2rem;
+        background:#ffb76b;
+        background:linear-gradient(to right,#FFB76B 0%,#FFA73D 30%,#FF7C00 60%,#FF7F04 100%);
+        -webkit-background-clip:text;-webkit-text-fill-color:transparent
+    }
+
+    .dark_logo:hover{
+        @apply dark:text-blue-800;
+    }
+    
+
+}
